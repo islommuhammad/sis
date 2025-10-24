@@ -8,7 +8,7 @@ services:
     environment:
       POSTGRES_DB: sis
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: sis_secure_password_2024
+      POSTGRES_PASSWORD: 123456789
       POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=C --lc-ctype=C"
     volumes:
       - postgres_data:/var/lib/postgresql/data
@@ -38,7 +38,7 @@ services:
       - ALLOWED_HOSTS=*  # Configure for your domain
       - POSTGRES_DB=sis
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=123456789
+      - POSTGRES_PASSWORD=sis_secure_password_2024
       - DB_HOST=db
       - DB_PORT=5432
       - SECRET_KEY=your-very-secure-secret-key-here-change-this-in-production
